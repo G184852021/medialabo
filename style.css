@@ -1,8 +1,20 @@
 html {
     font-family: 'Helvetica neue', Arial, 'sans serif';
-    font-size: 12px;
+    font-size: 16px;
 }
 
 h1 {
     color:brown;
+}
+
+a:link {
+    color:darkorange;
+}
+
+a:visited {
+    color:fuchsia;
+}
+
+a.hover {
+    text-decoration: none;
 }
