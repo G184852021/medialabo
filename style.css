@@ -20,11 +20,11 @@ a:hover {
 }
 
 h3 {
-    color:chartreuse;
+    background-color: chartreuse;
 }
 
-header {
+h1 {
     background-color:gold;
-    height: 10em;
+    height: 0.7em;
     padding: 2em;
 }
