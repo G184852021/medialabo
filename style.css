@@ -4,7 +4,7 @@ html {
 }
 
 h1 {
-    color:brown;
+    color:rgb(255, 255, 255);
 }
 
 a:link {
@@ -24,7 +24,20 @@ h3 {
 }
 
 h1 {
-    background-color:gold;
+    background-color:#e54800;
     height: 0.7em;
     padding: 2em;
+}
+
+h2 {
+    background-color: darkgray;
+}
+
+h4 {
+    border: 2px solid rgb(255, 154, 2);
+    padding: 5px;
+    margin: 5px;
+    width: 400px;
+    height: 20px;
+    background: rgb(241, 241, 4);
 }

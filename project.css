@@ -1,0 +1,16 @@
+h1 {
+    background-color:#e54800;
+    height: 0.7em;
+    padding: 1em;
+    color:aliceblue;
+}
+
+table th{
+  border:1px solid #000066;
+  background:royalblue;
+}
+   
+table td{
+  border:1px solid #000066;
+  background:#ffffff;
+}
