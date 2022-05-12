@@ -21,7 +21,7 @@ function hantei() {
     //        判定結果はコンソールに出力すること
     kaisu = kaisu + 1;
     if (kaisu<4) {
-        console.log(kaisu + "回目の予想:" + 4);
+        console.log(kaisu + "回目の予想:" + yoso);
         if (yoso<kotae) {
             console.log("まちがい．答えはもっと大きいですよ")
         }else if (yoso>kotae) {
