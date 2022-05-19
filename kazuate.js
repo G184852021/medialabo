@@ -21,7 +21,8 @@ function hantei() {
     if (kaisu<4) {
         console.log(kaisu + "回目の予想:" + yoso);
         if (kaisu===3 && yoso !== kotae) {
-            console.log("まちがい．残念でした答えは" + kotae + "です．")
+            let kekka = document.querySelector("まちがい．残念でした答えは" + kotae + "です．");
+            kekka.textContent = kekka;
         }else if (yoso>kotae) {
             console.log("まちがい．答えはもっと小さいですよ");
         }else if(yoso<kotae) {
