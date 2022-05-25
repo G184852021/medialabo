@@ -30,14 +30,14 @@ h1 {
 }
 
 h2 {
-    background-color: darkgray;
+    background-color: rgb(204, 197, 197);
 }
 
 h4 {
     border: 2px solid rgb(255, 154, 2);
     padding: 5px;
     margin: 5px;
-    width: 400px;
+    width: 480px;
     height: 20px;
     background: rgb(241, 241, 4);
 }
