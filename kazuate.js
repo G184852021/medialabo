@@ -4,6 +4,7 @@ let kotae = Math.floor(Math.random()*10) + 1;
 console.log('答え: ' + kotae);      // デバッグ用
 
 let kaisu = 1;
+let kaisu2 = 1;
 let yoso;
 let seikai = 0;
 
@@ -19,7 +20,7 @@ function hantei() {
     s.textContent = kaisu;
     let t = document.querySelector('span#yoso');
     t.textContent = yoso;
-    if (kaisu<4) {
+    if (kaisu<4&&kaisu2<4) {
         console.log(kaisu + "回目の予想:" + yoso);
         if (kaisu===3 && yoso !== kotae) {
             let k=("まちがい、残念でした答えは"+kotae+"です。");
@@ -38,7 +39,7 @@ function hantei() {
             let d=document.querySelector('p#result');
             d.textContent=k;
             seikai++;
-            kaisu+=3;
+            kaisu2+=3;
         }
     }else{
         let k="答えは" + kotae + "でした．すでにゲームは終わっています";
