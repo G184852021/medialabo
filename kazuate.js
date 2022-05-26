@@ -14,8 +14,7 @@ b.addEventListener('click', hantei);
 function hantei() {
     let i = document.querySelector('input[name="kaitou"]');
     let r = i.value; 
-    r  = Number(r)
-    yoso = r;
+    yoso = Number(r)
     let s = document.querySelector('span#kaisu');
     s.textContent = kaisu;
     let t = document.querySelector('span#yoso');
