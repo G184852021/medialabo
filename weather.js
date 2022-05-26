@@ -51,3 +51,6 @@ console.log(data.name);
 console.log(data.main.temp_max);
 console.log(data.main.temp_min);
 
+let b = document.querySelector('#print');
+b.addEventListener('click', );
+
