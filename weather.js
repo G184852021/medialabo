@@ -52,5 +52,4 @@ console.log(data.main.temp_max);
 console.log(data.main.temp_min);
 
 let b = document.querySelector('#print');
-b.addEventListener('click', );
-
+b.addEventListener('click', search);

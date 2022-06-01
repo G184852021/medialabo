@@ -20,7 +20,12 @@ a:hover {
 }
 
 h3 {
-    background-color: chartreuse;
+    border: 2px solid rgb(38, 192, 46);
+    padding: 5px;
+    margin: 5px;
+    width: 680px;
+    height: 50px;
+    background: rgb(86, 211, 93);
 }
 
 h1 {
