@@ -5,6 +5,13 @@ h1 {
     color:aliceblue;
 }
 
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  font-size: 30px;
+}
+
 table th{
   border:1px solid #000066;
   background:royalblue;

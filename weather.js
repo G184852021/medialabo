@@ -47,10 +47,6 @@ let data = {
 
 ////////// 課題3-2 ここからプログラムを書こう
 
-console.log(data.name);
-console.log(data.main.temp_max);
-console.log(data.main.temp_min);
-
 
 
 let b = document.querySelector('button#print');
@@ -80,10 +76,14 @@ function showResult(resp) {
   let a = document.querySelector('span#chiten');
   a.textContent=data.name;
 
-  let t = document.querySelector('span#tenki');
-  t.textContent=data.weather.description;
+  let h = document.querySelector('span#saikou');
+  h.textContent=data.main.temp_max;
 	
+  let l = document.querySelector('span#saitei');
+  l.textContent=data.main.temp_min;
 
+  let s = document.querySelector('span#shitsudo')
+  s.textContent=data.main.humidity
 }
 
 // 通信エラーが発生した時の処理
