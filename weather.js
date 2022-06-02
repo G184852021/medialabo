@@ -77,19 +77,19 @@ function showResult(resp) {
   a.textContent=data.name;
 
   let h = document.querySelector('span#saikou');
-  h.textContent=data.main.temp_max;
+  h.textContent=data.main.temp_max + '℃';
 	
   let l = document.querySelector('span#saitei');
-  l.textContent=data.main.temp_min;
+  l.textContent=data.main.temp_min+ '℃';
 
   let s = document.querySelector('span#shitsudo')
-  s.textContent=data.main.humidity
+  s.textContent=data.main.humidity+ '%';
 
   let u = document.querySelector('span#husoku')
-  u.textContent=data.wind.speed
+  u.textContent=data.wind.speed+ 'm/s';
 
   let k = document.querySelector('span#kazamuki')
-  k.textContent=data.wind.deg
+  k.textContent=data.wind.deg;
 }
 
 // 通信エラーが発生した時の処理
