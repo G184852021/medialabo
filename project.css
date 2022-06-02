@@ -1,8 +1,10 @@
 h1 {
-    background-color:#e54800;
-    height: 0.7em;
-    padding: 1em;
-    color:aliceblue;
+  border: 5px solid rgb(116, 211, 73);
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  background: rgb(221, 208, 29);
 }
 
 table {

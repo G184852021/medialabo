@@ -84,6 +84,12 @@ function showResult(resp) {
 
   let s = document.querySelector('span#shitsudo')
   s.textContent=data.main.humidity
+
+  let u = document.querySelector('span#husoku')
+  u.textContent=data.wind.speed
+
+  let k = document.querySelector('span#kazamuki')
+  k.textContent=data.wind.deg
 }
 
 // 通信エラーが発生した時の処理
