@@ -51,5 +51,47 @@ console.log(data.name);
 console.log(data.main.temp_max);
 console.log(data.main.temp_min);
 
-let b = document.querySelector('#print');
+
+
+let b = document.querySelector('button#print');
 b.addEventListener('click', search);
+
+function search() {
+  let i = document.querySelector('input[name="chimei"]');
+	let c = i.value;
+  let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+ c + '.json';
+
+  axios.get(url)
+	  	.then(showResult)
+	  	.catch(showError)
+	  	.then(finish);
+}
+
+// 通信が成功した時の処理
+function showResult(resp) {
+	// サーバから送られてきたデータを出力
+	let data = resp.data;
+
+	// data が文字列型なら，オブジェクトに変換する
+	if (typeof data === 'string') {
+		data = JSON.parse(data);
+	}
+
+  let a = document.querySelector('span#chiten');
+  a.textContent=data.name;
+
+  let t = document.querySelector('span#tenki');
+  t.textContent=data.weather.description;
+	
+
+}
+
+// 通信エラーが発生した時の処理
+function showError(err) {
+	console.log(err);
+}	
+
+// 通信の最後にいつも実行する処理
+function finish() {
+	console.log('Ajax 通信が終わりました');
+}

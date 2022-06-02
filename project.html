@@ -5,6 +5,7 @@
     <title>project</title>
     <link rel="stylesheet" href="project.css">
     <script src = "weather.js" defer>    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
   </head>
 
   <body>
@@ -15,20 +16,22 @@
 
     <h1>世界の天気</h1>
 
-    <label for="chimei">地名: </label>
-    <input type="search" name="chimei" id="chimei" size="10">
+    <label for="chimei">都市ID: </label>
+    <input type="search" name="chimei" id="chimei" size="20">
     <button id="print">検索</button>
     <table>
         <tr>
             <th>都市</th>
+            <th>天気</th>
             <th>最高気温</th>
             <th>最低気温</th>
             
         </tr>
         <tr>
-            <td>東京</td>
-            <td>22.3℃</td>
-            <td>29.1℃</td>
+            <td><span id="chiten"></span></td>
+            <td><span id="tenki"></span></td>
+            <td><span id="saikou"></span>℃</td>
+            <td><span id="saitei"></span>℃</td>
         </tr>
     </table>
 
